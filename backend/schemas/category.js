@@ -17,6 +17,11 @@ export default {
         maxLength: 96,
       },
     },
+    {
+      title: 'Homepage displayed products',
+      name: 'hpProductsNumber',
+      type: 'number',
+    },
     // {
     //   name: 'parents',
     //   title: 'Parent categories',
