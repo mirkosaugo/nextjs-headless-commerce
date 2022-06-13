@@ -1,4 +1,22 @@
 .wrapper {
-  height: rem(48);
-  background: $black;
+  padding: rem(28) 0 rem(24);
+  // position: fixed;
+  // top: 0;
+  border-bottom: 1px solid var(--light-gray);
+  width: 100%;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo,
+.menu,
+.cart {
+  white-space: pre-line;
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  letter-spacing: var(--letter-spacing-h2);
 }
