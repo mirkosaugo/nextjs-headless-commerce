@@ -27,7 +27,7 @@ const nextConfig = {
       .find((rule) => typeof rule.oneOf === 'object')
       .oneOf.filter((rule) => Array.isArray(rule.use));
 
-    if (dev)
+    if (!dev)
       rules.forEach((rule) => {
         rule.use.forEach((moduleLoader) => {
           if (
