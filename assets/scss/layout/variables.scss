@@ -1,0 +1,53 @@
+:root {
+  --limited-max-width: #{rem(1920)};
+  --font-size-display: #{rem(154)};
+  --line-height-display: 1;
+  --letter-spacing-display: #{rem(-2)};
+  --font-size-h1: #{rem(62)};
+  --line-height-h1: 1;
+  --letter-spacing-h1: #{rem(-2)};
+  --font-size-h2: #{rem(32)};
+  --line-height-h2: 1;
+  --letter-spacing-h2: #{rem(-1)};
+  --font-size-p1: #{rem(24)};
+  --line-height-p1: 1;
+  --letter-spacing-p1: #{rem(-0.5)};
+  --font-size-p2: #{rem(16)};
+  --line-height--p2: 1;
+  --letter-spacing-p2: 0;
+  --extra-large: #{rem(360)};
+  --large: #{rem(260)};
+  --mediumAndSmall: #{rem(110)};
+  --medium: #{rem(90)};
+  --paddingCard: #{rem(30)};
+  --small: #{rem(20)};
+  --horizontal-padding: #{rem(20)};
+  --color-light: #ffffff;
+  --color-dark: #000000;
+  --light-gray: #e5e5e5;
+  --gray: #808080;
+  --color-error: #ed3333;
+  --concrete: #f2f2f2;
+  --pampas: #f1ede8;
+  --cararra: #efefea;
+  --porcelain: #eef2f3;
+  --peach: #f8f4f3;
+  --ecru: #f9f7f0;
+  --ebb: #efeaea;
+  --wood: #f4f0e9;
+  --athens: #eef0f3;
+  --nurse: #f2f4f2;
+
+  @include mq($from: wide) {
+    --font-size-h1: #{rem(48)};
+    --font-size-h2: #{rem(28)};
+    --letter-spacing-h2: #{rem(-0.5)};
+    --font-size-p1: #{rem(18)};
+    --font-size-p2: #{rem(14)};
+    --line-height-p2: 1.15;
+    --extra-large: #{rem(280)};
+    --large: #{rem(210)};
+    --mediumAndSmall: #{rem(90)};
+    --medium: #{rem(70)};
+  }
+}
