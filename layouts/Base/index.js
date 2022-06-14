@@ -1,9 +1,11 @@
 // components
 import Navbar from '/components/Navbar'
-
-import React from 'react'
+// hooks
+import useBodyScroll from '../../hooks/useBodyScroll';
 
 const BaseLayout = ({ children }) => {
+  useBodyScroll();
+  
   return (
     <>
       <Navbar />
