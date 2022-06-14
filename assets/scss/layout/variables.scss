@@ -1,27 +1,4 @@
 :root {
-  --limited-max-width: #{rem(1920)};
-  --font-size-display: #{rem(154)};
-  --line-height-display: 1;
-  --letter-spacing-display: #{rem(-2)};
-  --font-size-h1: #{rem(62)};
-  --line-height-h1: 1;
-  --letter-spacing-h1: #{rem(-2)};
-  --font-size-h2: #{rem(32)};
-  --line-height-h2: 1;
-  --letter-spacing-h2: #{rem(-1)};
-  --font-size-p1: #{rem(24)};
-  --line-height-p1: 1;
-  --letter-spacing-p1: #{rem(-0.5)};
-  --font-size-p2: #{rem(16)};
-  --line-height--p2: 1;
-  --letter-spacing-p2: 0;
-  --extra-large: #{rem(360)};
-  --large: #{rem(260)};
-  --mediumAndSmall: #{rem(110)};
-  --medium: #{rem(90)};
-  --paddingCard: #{rem(30)};
-  --small: #{rem(20)};
-  --horizontal-padding: #{rem(20)};
   --color-light: #ffffff;
   --color-dark: #000000;
   --light-gray: #e5e5e5;
@@ -38,16 +15,72 @@
   --athens: #eef0f3;
   --nurse: #f2f4f2;
 
-  @include mq($from: wide) {
+  --limited-max-width: #{rem(1920)};
+  --font-size-display: #{rem(48)};
+  --line-height-display: 1;
+  --letter-spacing-display: #{rem(-1)};
+  --font-size-h1: #{rem(32)};
+  --line-height-h1: 1;
+  --letter-spacing-h1: #{rem(-1)};
+  --font-size-h2: #{rem(18)};
+  --line-height-h2: 1;
+  --letter-spacing-h2: #{rem(-0.5)};
+  --font-size-p1: #{rem(16)};
+  --line-height-p1: 1;
+  --letter-spacing-p1: #{rem(-0.5)};
+  --font-size-p2: #{rem(12)};
+  --line-height--p2: 1;
+  --letter-spacing-p2: 0;
+  --extra-large: #{rem(220)};
+  --large: #{rem(160)};
+  --mediumAndSmall: #{rem(50)};
+  --medium: #{rem(40)};
+  --paddingCard: #{rem(20)};
+  --small: #{rem(10)};
+  --horizontal-padding: #{rem(10)};;
+  
+  @include mq($from: tablet) {
+    --horizontal-padding: #{rem(20)};
     --font-size-h1: #{rem(48)};
-    --font-size-h2: #{rem(28)};
-    --letter-spacing-h2: #{rem(-0.5)};
-    --font-size-p1: #{rem(18)};
-    --font-size-p2: #{rem(14)};
     --line-height-p2: 1.15;
     --extra-large: #{rem(280)};
+    --font-size-h2: #{rem(28)};
     --large: #{rem(210)};
     --mediumAndSmall: #{rem(90)};
     --medium: #{rem(70)};
+  }
+
+  @include mq($from: desktop) {
+    --font-size-h1: #{rem(32)};
+    --font-size-p1: #{rem(18)};
+    --font-size-p2: #{rem(14)};
+    --extra-large: #{rem(240)};
+    --large: #{rem(190)};
+    --mediumAndSmall: #{rem(70)};
+    --medium: #{rem(50)};
+    --paddingCard: #{rem(20)};
+  }
+
+  @include mq($from: wide) {
+    --font-size-display: #{rem(154)};
+    --line-height-display: 1;
+    --font-size-h1: #{rem(62)};
+    --line-height-h1: 1;
+    --letter-spacing-display: #{rem(-2)};
+    --letter-spacing-h1: #{rem(-2)};
+    --font-size-h2: #{rem(32)};
+    --line-height-h2: 1;
+    --letter-spacing-h2: #{rem(-1)};
+    --font-size-p1: #{rem(24)};
+    --line-height-p1: 1;
+    --font-size-p2: #{rem(16)};
+    --line-height--p2: 1;
+    --letter-spacing-p2: 0;
+    --extra-large: #{rem(360)};
+    --large: #{rem(260)};
+    --mediumAndSmall: #{rem(110)};
+    --medium: #{rem(90)};
+    --paddingCard: #{rem(30)};
+    --small: #{rem(20)};
   }
 }
