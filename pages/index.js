@@ -1,9 +1,14 @@
 import Head from 'next/head'
+import { useContext } from 'react'
+
+import { useMenu } from '../store/context/MenuContext'
 
 // layout
 import BaseLayout from '/layouts/Base'
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useMenu();
+
   return (
     <>
       <Head>
@@ -14,6 +19,7 @@ export default function Home() {
       
       <BaseLayout>
         <h1>Hello Next.js</h1>
+        { isMenuOpen ? <p>Menu is open</p> : <p>Menu is closed</p> }
       </BaseLayout>
 
     </>
