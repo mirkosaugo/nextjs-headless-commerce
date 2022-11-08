@@ -1,4 +1,3 @@
-import { useContext } from 'react'
 import Link from 'next/link'
 import { useMenu } from '../../store/context/MenuContext'
 
@@ -16,7 +15,9 @@ const Navbar = () => {
         <Link href="/">
           <a className={style.logo}>E-Sanity</a>
         </Link>
-        <button onClick={() => setIsMenuOpen(prevState => !prevState)} className={style.menu}>Menu</button>
+        <button onClick={() => setIsMenuOpen(prevState => !prevState)} className={style.menu}>
+          { isMenuOpen ? 'Close' : 'Menu' }
+        </button>
         <button className={style.cart}>Cart</button>
       </Container>
     </nav>

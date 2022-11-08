@@ -18,8 +18,8 @@ export default function Home() {
       </Head>
       
       <BaseLayout>
-        <h1>Hello Next.js</h1>
-        { isMenuOpen ? <p>Menu is open</p> : <p>Menu is closed</p> }
+        <br />
+        <h1>PIECES</h1>
       </BaseLayout>
 
     </>

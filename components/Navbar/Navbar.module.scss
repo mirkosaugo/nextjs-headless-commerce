@@ -1,9 +1,11 @@
 .wrapper {
   padding: rem(14) 0 rem(12);
-  // position: fixed;
-  // top: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
   border-bottom: 1px solid var(--light-gray);
   width: 100%;
+  background-color: var(--color-light);
 
   @include mq($from: tablet) {
     padding: rem(28) 0 rem(24);
@@ -26,5 +28,5 @@
 }
 
 .menu {
-  padding-right: rem(46);
+  padding-right: rem(58);
 }

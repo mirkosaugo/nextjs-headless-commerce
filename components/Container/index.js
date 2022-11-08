@@ -1,9 +1,10 @@
 import React from 'react'
 import style from './Container.module.scss'
+import classNames from 'classnames'
 
-const Container = ({children}) => {
+const Container = ({children, className}) => {
   return (
-    <div className={style.wrapper}>{children}</div>
+    <div className={classNames(style.wrapper, className)}>{children}</div>
   )
 }
 

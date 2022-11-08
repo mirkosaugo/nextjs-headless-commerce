@@ -1,14 +1,16 @@
 // components
 import Navbar from '/components/Navbar'
+import Menu from '/components/Menu'
 // hooks
-import useBodyScroll from '../../hooks/useBodyScroll';
+import useToogleScroll from '../../hooks/useToogleScroll';
 
 const BaseLayout = ({ children }) => {
-  useBodyScroll();
+  useToogleScroll();
   
   return (
     <>
       <Navbar />
+      <Menu />
       <main>{children}</main>
     </>
   )

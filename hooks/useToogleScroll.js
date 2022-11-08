@@ -2,18 +2,18 @@ import { useEffect } from 'react';
 // context
 import { useMenu } from '../store/context/MenuContext'
 
-const useBodyScroll = () => {
+const useToogleScroll = () => {
   const [isMenuOpen] = useMenu();
 
   useEffect(() => {
     if(isMenuOpen) {
-      document.body.classList.add('_oh');
+      document.documentElement.classList.add('_oh');
     } else {
-      document.body.classList.remove('_oh');
+      document.documentElement.classList.remove('_oh');
     }
   }, [isMenuOpen]);
   
   return null;
 }
 
-export default useBodyScroll
+export default useToogleScroll

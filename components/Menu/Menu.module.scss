@@ -1,0 +1,45 @@
+.wrapper {
+  background-color: rgba(var(--color-light-hex), .8);
+  width: 100vw;
+  height: 100vh;
+  top: var(--menu-height);
+  left: 0;
+  position: fixed;
+  z-index: 9;
+  animation: 0.2s cubic-bezier(0.1, 0, 0.1, 1) 0s 1 normal forwards running animation;
+
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -86px;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    font-size: var(--font-size-display);
+
+    &:hover {
+      -webkit-text-stroke: 2px black;
+      color: var(--color-light);
+    }
+  }
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+    backdrop-filter: none;
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(4px);
+  }
+}

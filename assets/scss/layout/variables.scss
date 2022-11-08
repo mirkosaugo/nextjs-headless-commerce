@@ -1,5 +1,6 @@
 :root {
   --color-light: #ffffff;
+  --color-light-hex: 255, 255, 255;
   --color-dark: #000000;
   --light-gray: #e5e5e5;
   --gray: #808080;
@@ -37,7 +38,8 @@
   --medium: #{rem(40)};
   --paddingCard: #{rem(20)};
   --small: #{rem(10)};
-  --horizontal-padding: #{rem(10)};;
+  --horizontal-padding: #{rem(10)};
+  --menu-height: #{rem(46)};
   
   @include mq($from: tablet) {
     --horizontal-padding: #{rem(20)};
@@ -48,6 +50,7 @@
     --large: #{rem(210)};
     --mediumAndSmall: #{rem(90)};
     --medium: #{rem(70)};
+    --menu-height: #{rem(82)};
   }
 
   @include mq($from: desktop) {
@@ -62,7 +65,7 @@
   }
 
   @include mq($from: wide) {
-    --font-size-display: #{rem(154)};
+    --font-size-display: #{rem(98)};
     --line-height-display: 1;
     --font-size-h1: #{rem(62)};
     --line-height-h1: 1;
@@ -82,5 +85,6 @@
     --medium: #{rem(90)};
     --paddingCard: #{rem(30)};
     --small: #{rem(20)};
+    --menu-height: #{rem(86)};
   }
 }
